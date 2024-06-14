@@ -1,0 +1,17 @@
+%flex-x{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+%flex-y{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+@mixin font-style($ff,$fs,$fw,$ln,$c) {
+    font-family: $ff;
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $ln;
+    color: $c;
+}

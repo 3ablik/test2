@@ -1,0 +1,28 @@
+@import './reset.scss';
+@import './vars.scss';
+@import './mixins-extends.scss';
+@import '../blocks/header.scss';
+.body{
+    background-color: #fff;
+}
+.container{
+    width: 1392px;
+    margin: 0 auto;
+    @media (max-width:375px){
+        width: 359px;
+        margin: auto;
+    }
+}
+.header-container{
+    width: 1392px;
+    margin: 0 auto;
+    @media (max-width:375px){
+        min-width: 50px;
+        width: 359px;
+        margin: auto;
+        
+    }
+}
+.none{
+    display: none;
+}

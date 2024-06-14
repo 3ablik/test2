@@ -1,0 +1,27 @@
+$color-blue: #4754eb;
+$color-purple: #8633b0;
+$color-pink: #eb478b;
+$background: #f2f2f2;
+$main-white: #fff;
+$main-black: #1a1a1a;
+$main-grey: #808080;
+$main-lt-grey: #d9d9d9;
+$hover-blue: #505dec;
+$inactive-blue: #3c49dd;
+$font-main: "VisueltPro-Regular";
+$font-bold: "VisueltPro-Bold";
+
+@font-face {
+    font-family: "VisueltPro-Regular"; 
+    // адрес шрифта и тип 
+    src: url("../../fonts/font/VisueltPro-Regular.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+} 
+@font-face {
+    font-family: "VisueltPro-Bold"; 
+    // адрес шрифта и тип 
+    src: url("../../fonts/font/VisueltPro-Bold.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+  } 

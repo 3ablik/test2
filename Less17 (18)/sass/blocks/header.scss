@@ -1,0 +1,319 @@
+@import '../../sass/base/mixins-extends.scss';
+@import '../base/vars.scss';
+.header {
+    @media (max-width:375px){
+        width: 375px;
+        margin: auto;
+    }
+}
+
+.header__top {
+    @extend %flex-x;
+    max-width: 1280px;
+    margin-top: 24px;
+    @media (max-width: 375px){
+        max-width: 375px;
+        margin: auto;
+        padding: 12px 20px 40px 20px;
+        
+    }
+}
+.logo {
+    @include font-style($font-main,18px,600,135%,$color-blue)
+}
+.nav {
+    @extend %flex-x;
+    width: 654.5px;
+    margin-left: 292.5px;
+    @media (max-width: 375px){
+        display: none;
+        width: 0;
+    }
+}
+.menu {
+    width: 501px;
+    @extend %flex-x;
+    @media (max-width: 375px){
+        display: none;
+    }
+}
+.link {
+    @include font-style($font-main,18px,400,135%,$main-grey) ;
+}
+.nav__language {
+    width: 57px;
+    @extend %flex-x;
+    @include font-style($font-main,18px,500,135%,$color-blue);
+    @media (max-width: 375px){
+        display: none;
+    }
+}
+.nav__lang-active {
+    &:hover{
+        color: $hover-blue;
+    }
+}
+.btn {
+    background: $color-blue;
+}
+.btn-auth {
+    border-radius: 16px;
+    padding: 12px 24px;
+    height: 48px;
+    @include font-style($font-main,18px,500,135%,$main-white);
+    background: $color-blue;
+    @media (max-width: 375px){
+        width: 0;
+        height: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.auth-txt {
+    @media (max-width: 375px){
+        display: none;
+    }
+}
+.btn-auth-adaptive {
+    display: none;
+    @media (max-width: 375px){
+        width: 40px;
+        height: 40px;
+        display: block;
+
+    }
+}
+
+.header__content {
+    width: 1392px;
+    height: 720px;
+    @extend %flex-x;
+    @media (max-width: 375px){
+        width: 359px;
+        height: 670px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+}
+.header__content_txt {
+    width: 628px;
+    height: 520px;
+    @extend %flex-y;
+    margin-top: 120px;
+    @media(max-width: 375px){
+        width: 328px;
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        height: 279px;
+    }
+}
+.h__c__txt-title {
+    width: 628px;
+    height: 210px;
+    @include font-style($font-main,56px,500,125%,$main-black);
+    @media (max-width: 375px) {
+        width: 320px;
+        height: 135px;
+        @include font-style($font-main,36px,500,125%,$main-black);
+    }
+}
+.h__c__txt-input-zone {
+    border-radius: 16px;
+    width: 465px;
+    height: 64px;
+    background: rgba(255, 255, 255, 0.5);
+    @extend %flex-x;
+    @media (max-width: 375px) {
+        width: 320px;
+        height: 40px;
+        margin-top: 48px;
+    }
+}
+.em-input {
+    @include font-style($font-main,18px,500,135%,$main-grey);
+    @media (max-width: 375px) {
+        width: 198px;
+        height: 40px;
+        @include font-style($font-main,14px,400,135%,$main-grey);
+        margin-left: 24px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+}
+.em-send {
+    border-radius: 16px;
+    padding: 12px 24px;
+    width: 143px;
+    height: 48px;
+    background: $main-white;
+    @include font-style($font-main,18px,500,135%,$color-blue);
+    @media (max-width: 375px) {
+        border-radius: 16px;
+        padding: 10px 24px;
+        width: 122px;
+        height: 40px;
+        @include font-style($font-main,14px,500,135%,$color-blue);
+    }
+}
+.conf-accept {
+    @include font-style($font-main,12px,400,135%,#595959);
+    width: 354px;
+    height: 32px;
+    @media (max-width: 375px) {
+        @include font-style($font-main,12px,400,135%,#595959);
+        width: 320px;
+        margin-top: 24px;
+    }
+}
+.config-accept-span {
+    @include font-style($font-main,12px,400,135%,$hover-blue);
+}
+.read-more {
+    width: 165px;
+    height: 32px;
+    @extend %flex-x;
+    @media (max-width: 375px) {
+        display: none;
+    }
+}
+.read-more--txt {
+    @include font-style($font-main,16px,400,135%,$main-white);
+}
+.header_content-img {
+    width: 628px;
+    height: 720px;
+    position: relative;
+    @media (max-width:375px) {
+        width: 343px;
+        height: 292px;
+        margin-top: 40px;
+    }
+}
+.h__c-img--elipse-blue {
+    border-radius: 100%;
+    background-color: $color-blue;
+    width: 302px;
+    height: 302px;
+    z-index: 1;
+    position: absolute;
+    top: 208px;
+    @media (max-width:375px) {
+        width: 184px;
+        height: 184px;
+        top: 100px;
+    }
+}
+.h__c-img--elipse-white {
+    border-radius: 100%;
+    background-color: $main-white;
+    width: 456px;
+    height: 456px;
+    z-index: 2;
+    position: absolute;
+    top: 80px;
+    left: 163px;
+    @media (max-width:375px) {
+        width: 264px;
+        height: 264px;
+        left: 79px;
+        top: 0;
+    }
+}
+.sally-1 {
+    z-index: 10;
+    position: absolute;
+    @media (max-width:375px) {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.advantages {
+    width: 1393px;
+    height: 430px;
+    @extend %flex-x;
+    margin: 0 auto;
+    @media (max-width: 375px) {
+        width: 100%;
+        height: 668px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+.advantages-sect__title {
+    @include font-style($font-main,36px,500,115%,$main-black);
+    margin-top: 80px;
+    margin-left: 56px;
+    @media (max-width: 375px) {
+        @include font-style($font-main,18px,500,125%,$main-black);
+        margin-top: 40px;
+        margin-left: 20px;
+    }
+}
+.advantages-list {
+    margin: 40px auto;
+    @extend %flex-x;
+    width: 1344px;
+    height: 240px;
+    @media (max-width:375px) {
+        width: 343px;
+        height: 536px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 29px auto;
+    }
+}
+.advantage {
+    width: 437px;
+    height: 240px;
+    @media (max-width:375px) {
+        width: 343px;
+        height: 168px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+.advantage__title {
+    width: 437px;
+    height: 80px;
+    background: rgba(255, 255, 255, 0.5);
+    display: flex;
+    align-items: center;
+    @media (max-width:375px) {
+        width: 343px;
+        height: 64px;
+    }
+}
+.emoji {
+    margin-left: 16px;
+    @include font-style($font-main,56px,500,125%,$main-black);
+    @media (max-width:375px) {
+        @include font-style($font-main,36px,500,125%,$main-black);
+    }
+}
+.a_t-txt {
+    margin-left: 12px;
+    @include font-style($font-main,24px,500,125%,$main-black);
+    @media (max-width:375px) {
+        @include font-style($font-main,18px,500,125%,$main-black);
+        margin-left: 16px;
+    }
+}
+.advantage-desc {
+    @include font-style($font-main,18px,400,125%,$main-grey);
+    margin-left: 16px;
+    width: 389px;
+    @media (max-width:375px) {
+        @include font-style($font-main,14px,500,135%,$main-grey);
+        margin-left: 16px;
+        width: 311px;
+    }
+}

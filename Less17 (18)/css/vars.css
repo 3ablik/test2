@@ -1,0 +1,12 @@
+@font-face {
+  font-family: "VisueltPro-Regular";
+  src: url("../../fonts/font/VisueltPro-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "VisueltPro-Bold";
+  src: url("../../fonts/font/VisueltPro-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}/*# sourceMappingURL=vars.css.map */
